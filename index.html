@@ -213,7 +213,7 @@
       return el;
     }
 
-    function typeLetters(el, text, speed = 100) {
+    function typeLetters(el, text, speed = 92) {
       return new Promise(resolve => {
         let i = 0;
         el.style.opacity = 1;
@@ -234,7 +234,7 @@
       startBtn.style.display = 'none';
       for (const p of paragraphs) {
         const el = createPara();
-        await typeLetters(el, p, 100);
+        await typeLetters(el, p, 92);
         await new Promise(r => setTimeout(r, 400));
       }
 
